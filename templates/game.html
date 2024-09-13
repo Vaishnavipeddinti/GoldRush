@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rabbit Racing Game</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Rabbit Race Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Rabbit Racing Game</h1>
-
-    <canvas id="gameCanvas" width="800" height="400"></canvas>
-
+    <div class="game-container">
+        <h1>Rabbit Race Game</h1>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <p>Use arrow keys to move your rabbit. Reach the finish line to win!</p>
+    </div>
     <script src="{{ url_for('static', filename='js/game.js') }}"></script>
 </body>
 </html>
